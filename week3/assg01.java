@@ -40,7 +40,7 @@ class assg01 {
 
         for (int i = 0; i < marks.length; i++) {
             for (int j = 0; j < sub[i].length; j++) {
-                if (sub[i][j]== subjectid && marks[i][j]>max) 
+                if (sub[i][j]== subjectid &&marks[i][j]>max) 
                 {
                     max=marks[i][j];
                 }

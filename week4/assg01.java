@@ -55,9 +55,9 @@ public class assg01 {
         while(true) {
             System.out.println("\n1. Add Player\n2. Delete Player\n3. Add Coach" +
                              "\n4. Delete Coach\n5. Update Player\n6. Update Coach" +
-                             "\n7. Display Player details\n8. Display Coach details\n9. Exit");
+                             "\n7. Display Player details\n8. Display Coach details\n9. exit");
             
-            int choice = sc.nextInt();
+            int choice=sc.nextInt();
             
             switch(choice) {
                 case 1:
@@ -79,7 +79,7 @@ public class assg01 {
                     break;
                     
                 case 3:
-                    if(coaches.size() >= 2) 
+                    if(coaches.size()>=2) 
                     {
                         System.out.println("max coaches rchd!");
                         break;
@@ -94,7 +94,7 @@ public class assg01 {
                     
                 case 5:
                     if(!players.isEmpty()) {
-                        System.out.println("enter new average and role:");
+                        System.out.println("enter new avg and role:");
                         players.get(players.size()-1).updatePlayerRecord(sc.nextDouble(), sc.next());
                     }
                     break;
@@ -108,7 +108,7 @@ public class assg01 {
                 case 8:
                     if(!players.isEmpty()) 
                     {
-                        System.out.println(players.get(players.size()-1).getCoach());
+                        System.out.println(players.get(players.size()- 1).getCoach());
                     }
                     break;
                     
