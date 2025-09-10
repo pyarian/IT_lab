@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class gymdriver 
+public class GymDriver 
 {
     public static void main(String[]  args) {
         Scanner sc = new Scanner(System.in);
@@ -9,7 +9,7 @@ public class gymdriver
 
 
         while(true) {
-            System.out.println("\na. Add member\nb. search by ID\nc. display All\nd. Total Fee\ne. exit");
+            System.out.println("\na. add member\nb. search by ID\nc. display all\nd. total fee\ne. exit");
             char ch = sc.next().charAt(0);
 
             switch(ch) {
