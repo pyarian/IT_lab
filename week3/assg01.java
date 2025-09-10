@@ -7,46 +7,58 @@ class assg01 {
 
 
     static void enterMarks(int students) {
-        marks = new int[students][];
-        sub = new int[students][];
-        for (int i = 0; i < students; i++) {
-            System.out.print("Enter number of subjects for student " + (i+1) + ": ");
+        marks=new int[students][];
+        sub =new int[students][];
+        for (int i=0; i<students;i++) 
+        {
+
+            System.out.print("no. of subjects -> student " + (i+1) + ": ");
             int n = sc.nextInt();
             marks[i] = new int[n];
             sub[i] = new int[n];
+
             for (int j = 0; j < n; j++) {
-                System.out.print("Subject ID: ");
-                sub[i][j] = sc.nextInt();
-                System.out.print("Marks: ");
-                marks[i][j] = sc.nextInt();
+                System.out.print("subject id: ");
+                sub[i][j]=sc.nextInt();
+                System.out.print("markss: ");
+                marks[i][j]=sc.nextInt();
             }
         }
     }
 
-    static void avg(int studentId) {
+    static void avg(int studentid) {
+
         int sum = 0;
-        for (int m : marks[studentId]) sum += m;
-        System.out.println("avg  = " + (sum / (double)marks[studentId].length));
+        for (int m : marks[studentid])  sum +=  m;
+        System.out.println("avg = " +(sum/(double)marks[studentid].length));
+
     }
 
-    static void highest(int subjectId) {
-        int max = -1;
+    static void highest(int subjectid) 
+    {
+        int max=-1;
+
         for (int i = 0; i < marks.length; i++) {
             for (int j = 0; j < sub[i].length; j++) {
-                if (sub[i][j] == subjectId && marks[i][j] > max) {
-                    max = marks[i][j];
+                if (sub[i][j]== subjectid &&marks[i][j]>max) 
+                {
+                    max=marks[i][j];
                 }
             }
         }
-        System.out.println("Highest in subject " + subjectId + " = " + max);
+
+        System.out.println("highest in subject " + subjectid + " = " + max);
     }
 
-    static void display() {
-        for (int i = 0; i < marks.length; i++) {
-            System.out.print("Student " + (i+1) + ": ");
+    static void display() 
+    {
+
+        for (int i=0; i<marks.length; i++) {
+            System.out.print("student " + (i+1) + ": ");
             for (int j = 0; j < marks[i].length; j++) {
-                System.out.print("[Sub" + sub[i][j] + ":" + marks[i][j] + "] ");
+                System.out.print("subject" + sub[i][j] + ":" + marks[i][j]);
             }
+            
             System.out.println();
         }
     }
@@ -54,6 +66,7 @@ class assg01 {
     public static void main(String[] args) {
         System.out.print("no. of students : ");
         int n = sc.nextInt();
+        
         enterMarks(n);
 
         display();

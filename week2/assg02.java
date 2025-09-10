@@ -23,6 +23,7 @@ public class assg02 {
     }
 
     public void display() {
+        if (size == 0) System.out.print("no people present");
         for (int i =0; i <size;i++)
         {
             System.out.print(queue[i] + " ");
@@ -34,6 +35,8 @@ public class assg02 {
     public static void main(String[] args) {
         assg02 hehe = new assg02();
         hehe.join(1); hehe.join(2); hehe.join(3); hehe.join(4);
+        hehe.display();
+        hehe.ride();
         hehe.display();
         hehe.ride();
         hehe.display();

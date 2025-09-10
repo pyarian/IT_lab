@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class assg03 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter size of arr :");
         int n = sc.nextInt();
         int[] arr = new int[n];

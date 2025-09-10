@@ -11,10 +11,22 @@ public class assg02 {
         fee = f;
     }
 
-    public int getMemberId() { return memberId; }
-    public String getName() { return name; }
-    public String getPlan() { return plan; }
-    public double getFee() { return fee; }
+    public int getMemberId() 
+    { 
+        return memberId; 
+    }
+    public String getName() 
+    { 
+        return name; 
+    }
+    public String getPlan() 
+    { 
+        return plan; 
+    }
+    public double getFee() 
+    { 
+        return fee; 
+    }
 
     public void display() {
         System.out.println("ID: " + memberId + ", Name: " + name + ", Plan: " + plan + ", Fee: " + fee);
