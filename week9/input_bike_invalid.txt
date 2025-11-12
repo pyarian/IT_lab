@@ -1,0 +1,7 @@
+bike
+AS09 2345
+Bob
+5123456789
+560001
+Yamaha
+BIKE12
